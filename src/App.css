@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(100, 100, 100, 0.5);
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+  width: 100dvw;
+}
+
+* {
+  transition: all 0.5s ease;
+}
+
+.hero-section {
+  font-family: "inter", sans-serif;
+}
+
+.slide {
+  font-family: "montserrat", sans-serif;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.hero {
+  position: relative;
+}
+
+.poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
