@@ -15,9 +15,9 @@ export function About({ darkmode }) {
     <section
       id="about"
       ref={ref}
-      className={`py-24 ${darkmode ? "bg-gray-900" : "bg-[#f9f7ff]"}`}
+      className={`py-24  ${darkmode ? "bg-gray-900" : "bg-[#f9f7ff]"}`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="w-dvw overflow-x-hidden mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}

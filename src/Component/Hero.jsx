@@ -14,7 +14,7 @@ export default function Hero({ darkmode }) {
   return (
     <section
       id="hero"
-      className={`relative w-full min-h-screen pt-20 overflow-hidden md:flex md:justify-center md:items-center ${
+      className={`relative w-lvw min-h-screen pt-20 overflow-hidden md:flex md:justify-center md:items-center ${
         darkmode ? "bg-gray-900" : "bg-[#f9f7ff]"
       }`}
     >

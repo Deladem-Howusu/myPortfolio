@@ -72,7 +72,7 @@ export function Projects({ darkmode }) {
     //   githubUrl: "#",
     // },
     {
-      id: 6,
+      id: 5,
       title: "Brand Identity",
       description:
         "Complete brand identity system including logo, color palette, typography, and brand guidelines.",
@@ -99,7 +99,9 @@ export function Projects({ darkmode }) {
     <section
       id="projects"
       ref={ref}
-      className={`py-24 ${darkmode ? "bg-gray-900" : "bg-gray-100 "}`}
+      className={`py-24 ${
+        darkmode ? "bg-gray-900" : "bg-gray-100 "
+      } w-full overflow-hidden`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div

@@ -100,11 +100,11 @@ export function Contact({ darkmode }) {
     <section
       id="contact"
       ref={ref}
-      className={`py-24 bg-gradient-to-br ${
+      className={`py-24 bg-gradient-to-br w-dvw overflow-x-hidden ${
         darkmode ? "from-gray-800 to-gray-900" : "from-blue-50 to-purple-50"
       } `}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
