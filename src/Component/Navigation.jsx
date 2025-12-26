@@ -98,7 +98,9 @@ export default function Navigation({ children, darkMode }) {
           {/* MOBILE MENU BUTTON */}
           <button
             onClick={() => setIsOpen((prev) => !prev)}
-            className="md:hidden p-2"
+            className={`md:hidden p-2  ${
+              darkMode ? "text-white" : "text-gray-800"
+            }`}
             aria-label="Toggle menu"
           >
             {isOpen ? <X /> : <Menu />}

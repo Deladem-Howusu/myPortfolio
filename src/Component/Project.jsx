@@ -32,7 +32,7 @@ export function Projects({ darkmode }) {
         "A landing page for C'est Bon LLC, showcasing their services and portfolio with a modern design.",
       image: "work.png",
       tags: ["Figma", "React"],
-      category: "design",
+      category: "web",
       liveUrl: "https://www.cestbonllc.com/",
       githubUrl: "https://github.com/Deladem-Howusu/C-est-website.git",
     },
@@ -43,7 +43,7 @@ export function Projects({ darkmode }) {
         "Cross-platform fitness tracking app with workout plans, progress tracking, and social features.",
       image: "inventory.png",
       tags: ["React", "Tailwind css"],
-      category: "mobile",
+      category: "web",
       liveUrl: "#",
       githubUrl: "https://github.com/Deladem-Howusu/inventory-management.git",
     },
@@ -167,24 +167,28 @@ export function Projects({ darkmode }) {
                   className="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-100 lg:opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-6 gap-4">
-                  <a
-                    href={project.liveUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-3 bg-white rounded-full hover:bg-blue-600 hover:text-white transition-colors"
-                    aria-label="View live project"
-                  >
-                    <ExternalLink className="w-5 h-5" />
-                  </a>
-                  <a
-                    href={project.githubUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-3 bg-white rounded-full hover:bg-blue-600 hover:text-white transition-colors"
-                    aria-label="View on GitHub"
-                  >
-                    <Github className="w-5 h-5" />
-                  </a>
+                  {project.liveUrl == "#" ? null : (
+                    <a
+                      href={project.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="p-3 bg-white rounded-full hover:bg-blue-600 hover:text-white transition-colors"
+                      aria-label="View live project"
+                    >
+                      <ExternalLink className="w-5 h-5" />
+                    </a>
+                  )}
+                  {project.githubUrl == "#" ? null : (
+                    <a
+                      href={project.githubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="p-3 bg-white rounded-full hover:bg-blue-600 hover:text-white transition-colors"
+                      aria-label="View on GitHub"
+                    >
+                      <Github className="w-5 h-5" />
+                    </a>
+                  )}
                 </div>
               </div>
               <div className="p-6">
