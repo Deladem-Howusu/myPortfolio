@@ -351,7 +351,7 @@ export function Contact({ darkmode }) {
           } border-t border-gray-200  pt-8`}
         >
           <p>© 2025 Jerry Deladem Howusu. All rights reserved.</p>
-          <p className="mt-2">Designed & Built with passion ❤️</p>
+          <p className="mt-2">Designed & Built with passion </p>
         </motion.div>
       </div>
     </section>
