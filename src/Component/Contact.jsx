@@ -134,7 +134,9 @@ export function Contact({ darkmode }) {
             >
               Contact Information
             </h4>
-            <p className="text-gray-600 dark:text-gray-400 mb-8">
+            <p
+              className={`${darkmode ? "text-gray-400" : "text-gray-600"} mb-8`}
+            >
               Feel free to reach out to me for any inquiries, collaborations, or
               just to say hello. I'm always open to discussing new projects and
               opportunities.

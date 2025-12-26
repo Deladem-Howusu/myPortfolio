@@ -78,7 +78,7 @@ export function Experience({ darkmode }) {
     <section
       id="experience"
       ref={ref}
-      className={`py-24 bg-gradient-to-br ${
+      className={`py-24 bg-gradient-to-br overflow-x-hidden ${
         darkmode ? "from-gray-800 to-gray-900" : "from-blue-50 to-purple-50"
       }`}
     >

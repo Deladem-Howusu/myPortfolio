@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import "./App.css";
 import { About } from "./Component/About";
 import Hero from "./Component/Hero";
@@ -18,7 +18,11 @@ function App() {
       <Navigation darkMode={darkMode} setDarkMode={setDarkMode}>
         <button
           onClick={() => setDarkMode((prev) => !prev)}
-          className="w-10 h-10 rounded-full bg-gray-200 dark:bg-gray-700 flex justify-center items-center hover:bg-gray-300 dark:hover:bg-gray-600 transition-all"
+          className={`w-10 h-10 rounded-full ${
+            darkMode
+              ? "bg-gray-700 hover:bg-gray-600"
+              : "bg-gray-200 hover:bg-gray-300 "
+          } flex justify-center items-center   transition-all`}
         >
           {darkMode ? (
             <Moon className="w-5 h-5 text-purple-600 transition-all" />

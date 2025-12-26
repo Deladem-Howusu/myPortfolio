@@ -26,11 +26,15 @@ export default function Hero({ darkmode }) {
             rotate: [0, 180, 360],
           }}
           transition={{
-            duration: 20,
+            duration: 10,
             repeat: Infinity,
             ease: "linear",
           }}
-          className="absolute -top-1/2 -left-1/2 w-full h-full bg-gradient-to-br from-blue-200/20 to-purple-200/20 dark:from-blue-900/10 dark:to-purple-900/10 rounded-full blur-3xl"
+          className={`absolute -top-1/2 -left-1/2 w-full h-full bg-linear-to-br ${
+            darkmode
+              ? "from-blue-900/20 to-purple-900/20"
+              : "from-blue-200/20 to-purple-200/20"
+          }  rounded-full blur-3xl`}
         />
         <motion.div
           animate={{
@@ -38,16 +42,20 @@ export default function Hero({ darkmode }) {
             rotate: [360, 180, 0],
           }}
           transition={{
-            duration: 25,
+            duration: 10,
             repeat: Infinity,
             ease: "linear",
           }}
-          className="absolute -bottom-1/2 -right-1/2 w-full h-full bg-gradient-to-br from-purple-200/20 to-pink-200/20 dark:from-purple-900/10 dark:to-pink-900/10 rounded-full blur-3xl"
+          className={`absolute -bottom-1/2 -right-1/2 w-full h-full bg-linear-to-br ${
+            darkmode
+              ? "from-purple-900/20 to-pink-900/20"
+              : "from-purple-200/20 to-pink-200/20"
+          } rounded-full blur-3xl`}
         />
       </div>
 
       {/* CONTENT */}
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-6 z-10">
         <div className="flex flex-col items-center text-center gap-10 lg:flex-row lg:text-left lg:justify-between">
           {/* TEXT */}
           <motion.div
@@ -97,7 +105,7 @@ export default function Hero({ darkmode }) {
             initial={{ scale: 0.9, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ duration: 0.5 }}
-            className="flex justify-center"
+            className="flex justify-center z-10"
           >
             <div className="w-56 h-56 md:w-80 md:h-80 lg:w-80 lg:h-80 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 p-1 shadow-xl">
               <div className="w-full h-full rounded-full overflow-hidden bg-gray-200">
