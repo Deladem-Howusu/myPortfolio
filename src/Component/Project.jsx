@@ -40,9 +40,9 @@ export function Projects({ darkmode }) {
       id: 3,
       title: "Inventory Management",
       description:
-        "Cross-platform fitness tracking app with workout plans, progress tracking, and social features.",
+        "Web-based inventory management system for tracking stock levels, orders, and suppliers with real-time updates.",
       image: "inventory.png",
-      tags: ["React", "Tailwind css"],
+      tags: ["React", "Tailwind css", "MongoDB"],
       category: "web",
       liveUrl: "#",
       githubUrl: "https://github.com/Deladem-Howusu/inventory-management.git",
@@ -54,7 +54,7 @@ export function Projects({ darkmode }) {
         "Real-time analytics dashboard with data visualization, reporting, and custom metrics.",
       image:
         "https://images.unsplash.com/photo-1677214467820-ab069619bbb6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB3ZWIlMjBkZXNpZ258ZW58MXx8fHwxNzY0ODA3NTgxfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      tags: ["Next.js", "PostgreSQL", "Chart.js", "AWS"],
+      tags: ["React JS", "MongoDB", "Chart.js", "Express.js "],
       category: "web",
       liveUrl: "#",
       githubUrl: "#",

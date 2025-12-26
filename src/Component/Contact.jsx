@@ -59,7 +59,7 @@ export function Contact({ darkmode }) {
       icon: Mail,
       label: "Email",
       value: "deladem619@gmail.com",
-      href: "deladem619@gmail.com",
+      href: "mailto:deladem619@gmail.com",
     },
     {
       icon: Phone,
@@ -71,7 +71,7 @@ export function Contact({ darkmode }) {
       icon: MapPin,
       label: "Location",
       value: "Accra, Ghana",
-      href: "#",
+      href: "https://www.google.com/maps/place/Accra/",
     },
   ];
 
@@ -145,6 +145,7 @@ export function Contact({ darkmode }) {
                 <motion.a
                   key={info.label}
                   href={info.href}
+                  target="blank"
                   initial={{ opacity: 0, x: -20 }}
                   animate={inView ? { opacity: 1, x: 0 } : {}}
                   transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}

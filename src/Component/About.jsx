@@ -92,9 +92,7 @@ export function About({ darkmode }) {
                 learning, real-world problem-solving, and a passion for creating
                 products that actually help people. I’ve worked on projects
                 involving user authentication, interactive UI components, API
-                integrations, and community-driven platforms — including iGift,
-                a system that connects people who want to give or request items
-                they no longer use.
+                integrations, and community-driven platforms
               </p>
               <p
                 className={`${

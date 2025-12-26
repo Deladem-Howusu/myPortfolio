@@ -15,7 +15,7 @@ const skillsection = [
     icon: Palette,
     description:
       "Designing user-friendly interfaces and enhancing user experience.",
-    tools: ["Figma", "Adobe XD", "Sketch"],
+    tools: ["Figma"],
     color: "from-green-500 to-emerald-500",
   },
   {
@@ -23,7 +23,7 @@ const skillsection = [
     icon: Smartphone,
     description:
       "Creating visually appealing graphics for digital and print media.",
-    tools: ["Photoshop", "Illustrator", "InDesign"],
+    tools: ["Photoshop", "Illustrator", "Canva"],
     color: "from-purple-500 to-pink-500",
   },
 ];

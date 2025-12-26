@@ -7,7 +7,7 @@ const handleProject = () => {
 };
 
 const handleDownloadCV = () => {
-  window.open("/Jerry Howusu_CV (1).pdf", "_blank");
+  window.open("/Jerry Howusu_CV.pdf", "_blank");
 };
 
 export default function Hero({ darkmode }) {
@@ -18,12 +18,31 @@ export default function Hero({ darkmode }) {
         darkmode ? "bg-gray-900" : "bg-[#f9f7ff]"
       }`}
     >
-      {/* Background */}
-      <div className="absolute inset-0 -z-10 overflow-hidden">
+      {/* Animated Background Elements */}
+      <div className="absolute inset-0 overflow-hidden">
         <motion.div
-          animate={{ rotate: 360 }}
-          transition={{ duration: 40, repeat: Infinity, ease: "linear" }}
-          className="absolute -top-1/2 -left-1/2 w-full h-full bg-gradient-to-br from-blue-500/10 to-purple-500/10 rounded-full blur-3xl"
+          animate={{
+            scale: [1, 1.2, 1],
+            rotate: [0, 180, 360],
+          }}
+          transition={{
+            duration: 20,
+            repeat: Infinity,
+            ease: "linear",
+          }}
+          className="absolute -top-1/2 -left-1/2 w-full h-full bg-gradient-to-br from-blue-200/20 to-purple-200/20 dark:from-blue-900/10 dark:to-purple-900/10 rounded-full blur-3xl"
+        />
+        <motion.div
+          animate={{
+            scale: [1.2, 1, 1.2],
+            rotate: [360, 180, 0],
+          }}
+          transition={{
+            duration: 25,
+            repeat: Infinity,
+            ease: "linear",
+          }}
+          className="absolute -bottom-1/2 -right-1/2 w-full h-full bg-gradient-to-br from-purple-200/20 to-pink-200/20 dark:from-purple-900/10 dark:to-pink-900/10 rounded-full blur-3xl"
         />
       </div>
 
